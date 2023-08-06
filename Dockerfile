@@ -1,7 +1,7 @@
 FROM wordpress
 
 COPY setup.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/
+RUN chmod +x /usr/local/bin/setup.sh
 
 RUN cp -R /usr/src/wordpress/* /var/www/html/
 
